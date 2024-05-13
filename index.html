@@ -1,1 +1,109 @@
+<!DOCTYPE html> 
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Breathe </title>
+  <style> 
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+ /* image */
+.image {
+  animation: imageAnimation 3s infinite;
+  background-size:     contain;
+  background-repeat:   repeat;
+  background-position: center center; 
+}
+
+@keyframes imageAnimation {
+  0%   { background-image: url(https://www.kff.org/wp-content/uploads/2022/11/pregnancy.png2_.png); }
+  25%  { background-image: url(https://reliefweb.int/sites/default/files/styles/large/public/previews/2d/83/2d832c6e-6156-47ae-b0f1-fdc498e0f672.png.webp?2511039-1-0); }
+  50%  { background-image: url(https://d3i6fh83elv35t.cloudfront.net/static/2023/03/maternal-deaths-by-race-1024x736.png); }
+  75%  { background-image: url(https://www.rif.org/sites/default/files/images/2022/11/01/graphic-children.png); }
+  100% { background-image: url(https://nba.uth.tmc.edu/neuroscience/m/s4/images/byrne/flo1.png); }
+}
+.block {
+  position: relative;
+  border-radius: 10px;
+  --size: 150px;
+  height: var(--size);
+  width: calc(var(--size) *  3);
+}
+   
+  </style>
+ </head>
+<body>
+<div class="block image"></div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="APRILSC.png" style="width:100%">
+    <img src="BILLSSC.png" style="width:100%">
+    <img src="GOOGLE2SC.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="CLIMATESC.png" style="width:100%">
+    <img src="GOOGLE1SC.png" style="width:100%">
+    <img src="CANNONSC.png" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="JOURNALSC.png" style="width:100%">
+    <img src="MAYSC.png" style="width:100%">
+    <img src="REACTIVESC.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="INCOMESC.png" style="width:100%">
+    <img src="JOURNAL2SC.png" style="width:100%">
+    <img src="TASKSSC.png" style="width:100%">
+
+  </div>
+</div>
+
+  
+</body>
+</html>
+    
+
 
