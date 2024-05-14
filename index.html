@@ -14,96 +14,113 @@
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0 0px;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  max-width: 20%;
+  padding: 0 0px;
+  z-index: -1; 
 }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
  /* image */
 .image {
-  animation: imageAnimation 3s infinite;
-  background-size:     contain;
-  background-repeat:   repeat;
-  background-position: center center; 
+  animation: imageAnimation 10s infinite;
+  background-size:    contain;
+  background-repeat:  no-repeat;
+  background-position: left; 
 }
 
 @keyframes imageAnimation {
-  0%   { background-image: url(https://www.kff.org/wp-content/uploads/2022/11/pregnancy.png2_.png); }
-  25%  { background-image: url(https://reliefweb.int/sites/default/files/styles/large/public/previews/2d/83/2d832c6e-6156-47ae-b0f1-fdc498e0f672.png.webp?2511039-1-0); }
-  50%  { background-image: url(https://d3i6fh83elv35t.cloudfront.net/static/2023/03/maternal-deaths-by-race-1024x736.png); }
-  75%  { background-image: url(https://www.rif.org/sites/default/files/images/2022/11/01/graphic-children.png); }
-  100% { background-image: url(https://nba.uth.tmc.edu/neuroscience/m/s4/images/byrne/flo1.png); }
+  0%   { background-image: url(https://images.squarespace-cdn.com/content/v1/5bc5da7c3560c36b7dab1922/1590766274779-QMF8Y8DFVMTC8SOWCCAT/Screen+Shot+2020-05-29+at+11.30.54+AM.png); }
+  10% { background-image: url(https://www.weareteachers.com/wp-content/uploads/social-emotional-learning-infographic.jpg); }
+  20% { background-image: url(https://pbs.twimg.com/media/FrqkMaXXoAEJAZ_.jpg:large); }
+  30%  { background-image: url(https://reliefweb.int/sites/default/files/styles/large/public/previews/2d/83/2d832c6e-6156-47ae-b0f1-fdc498e0f672.png.webp?2511039-1-0); }
+  40%  { background-image: url(https://d3i6fh83elv35t.cloudfront.net/static/2023/03/maternal-deaths-by-race-1024x736.png); }
+  50%  { background-image: url(https://cdn.statcdn.com/Infographic/images/normal/24540.jpeg); }
+  60% { background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIZxG6EOcr4c3ok3QEpiF0TiQBspjP_eSXsxltk2DoiQ&s);  }
+  70% { background-image: url(https://i.redd.it/pe0equ7gpxyc1.jpeg); }
+  80% { background-image: url(https://preview.redd.it/i-made-fuck-nestl%C3%A9-stickers-v0-x82ye2bbk2wc1.jpeg?width=1080&crop=smart&auto=webp&s=ca3ae9c475a3fdab704a7752e012d82af2153881); }
+  90% { background-image: url(https://allthatsinteresting.com/wordpress/wp-content/uploads/2022/09/jon-burge-untouchable.jpg); }
+  100% { background-image: url(https://www.indian-affairs.org/uploads/8/7/3/8/87380358/violence-stats-website_orig.png); } 
 }
 .block {
-  position: relative;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.7;
   border-radius: 10px;
-  --size: 150px;
+  --size: 520px;
   height: var(--size);
   width: calc(var(--size) *  3);
 }
    
   </style>
  </head>
+  
 <body>
-<div class="block image"></div>
 
 <!-- Photo Grid -->
 <div class="row"> 
+    <div class="block image"></div> 
   <div class="column">
     <img src="APRILSC.png" style="width:100%">
     <img src="BILLSSC.png" style="width:100%">
     <img src="GOOGLE2SC.png" style="width:100%">
+    <img src="GOOGLE3SC.png" style="width:100%">
+    <img src="JONSC.png" style="width:100%"> 
+    <img src="GOOGLE6SC.png" style="width:100%"> 
+    <img src="REAPPRAISESC.png" style="width:100%"> 
+    <img src="gazasc.png" style="width:100%">  
+    <img src="asthmasc.png" style="width:100%"> 
   </div>
   <div class="column">
     <img src="CLIMATESC.png" style="width:100%">
     <img src="GOOGLE1SC.png" style="width:100%">
     <img src="CANNONSC.png" style="width:100%">
+    <img src="GOOGLE4SC.png" style="width:100%"> 
+    <img src="BIASSC.png" style="width:100%"> 
+    <img src="INCOMESC.png" style="width:100%">
+    <img src="gaza2sc.png" style="width:100%"> 
+    <img src="BIASSC.png" style="width:100%"> 
+    <img src="google8.png" style="width:100%"> 
   </div>  
   <div class="column">
     <img src="JOURNALSC.png" style="width:100%">
     <img src="MAYSC.png" style="width:100%">
     <img src="REACTIVESC.png" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="INCOMESC.png" style="width:100%">
+    <img src="GOOGLE5SC.png" style="width:100%"> 
+    <img src="LORDESC.png" style="width:100%">
     <img src="JOURNAL2SC.png" style="width:100%">
     <img src="TASKSSC.png" style="width:100%">
-
+    <img src="bipolarsc.png" style="width:100%"> 
+  </div> 
+  <div class="column">
+    <img src="APRILSC.png" style="width:100%">
+    <img src="BILLSSC.png" style="width:100%">
+    <img src="GOOGLE2SC.png" style="width:100%">
+    <img src="GOOGLE3SC.png" style="width:100%">
+    <img src="JONSC.png" style="width:100%"> 
+    <img src="GOOGLE6SC.png" style="width:100%"> 
+    <img src="REAPPRAISESC.png" style="width:100%"> 
+    <img src="gazasc.png" style="width:100%">  
+    <img src="asthmasc.png" style="width:100%"> 
   </div>
+   <div class="column">
+    <img src="CLIMATESC.png" style="width:100%">
+    <img src="GOOGLE1SC.png" style="width:100%">
+    <img src="CANNONSC.png" style="width:100%">
+    <img src="GOOGLE4SC.png" style="width:100%"> 
+    <img src="BIASSC.png" style="width:100%"> 
+    <img src="INCOMESC.png" style="width:100%">
+    <img src="gaza2sc.png" style="width:100%"> 
+    <img src="BIASSC.png" style="width:100%"> 
+    <img src="google8.png" style="width:100%"> 
+  </div>  
 </div>
 
   
 </body>
 </html>
-    
-
-
