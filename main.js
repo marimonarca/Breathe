@@ -1,4 +1,9 @@
-//it works!//
+// Function to detect when the user has scrolled to the bottom of the page
+function isScrollBottom() {
+  return window.innerHeight + window.scrollY >= document.body.offsetHeight;
+}
+
+//Function to open many popups - it works!//
 function openMultiplePopups() {
   window.open('https://www.youtube.com/embed/nQiS0UasJW4?si=nrdrBVF8uwY11FTm', 'mexicohmr', 'width=400,height=400,left=500,top=0x');
   window.open('https://www.youtube.com/watch?v=-euUGPQZoHw', 'spiderman', 'width=400,height=400,left=300,top=200x');
@@ -32,3 +37,12 @@ function openMultiplePopups() {
   window.open('https://p4hglobal.org/give', 'haitiorg', 'width=400,height=400,right=300,bottom=0x');
 
 }
+
+
+
+// Event listener for the scroll event
+window.addEventListener('scroll', function() {
+  if (isScrollBottom()) {
+    openMultiplePopups();
+  }
+});
