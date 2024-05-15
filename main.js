@@ -87,10 +87,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     window.open('https://p4hglobal.org/give', 'haitiorg').close();
   }
 
-  // Function to turn off  audio
+  // Function to turn off audio
   function turnOffAudio() {
     document.querySelectorAll('audio').forEach(audio => {
-      audio.pause();
+      audio.mute();
       audio.currentTime = 0; // Reset the playback position
     });
   }
