@@ -26,8 +26,9 @@ function openMultiplePopups() {
   window.open('https://www.mediamatic.net/en/page/378691/traces-of-death', 'traces', 'width=400,height=400,left=300,top=200x');
   window.open('https://i.redd.it/what-is-your-favourite-manga-panel-v0-gznkbh5vtnxc1.jpg?width=669&format=pjpg&auto=webp&s=ed3723d3ac0677db71828ad328701c825fac74ee', 'robin', 'width=400,height=400,left=450,top=650x');
   window.open('https://www.besttherapists.com/blog/am-i-bipolar-or-depressed-quiz', 'bipolarquiz', 'width=300,height=300,left=600,top=850x');
-  window.open('https://reverehealth.com/live-better/asthma-attacks-what-to-do-when-you-dont-have-your-inhaler/', 'inhaler', 'width=400,height=400,left=50,top=950x')
-  window.open('https://www.tiktok.com/@pappyorion/video/7365025092876717344?is_from_webapp=1&sender_device=pc&web_id=7119675791289599530', 'congott', 'width=400,height=400,left=950,top=50x')
-  window.open('https://media.licdn.com/dms/image/C4E22AQEJMfwDXRjRHw/feedshare-shrink_2048_1536/0/1652736379352?e=2147483647&v=beta&t=uZmDRzdGOma8F5aiCRdTGwg9Un3Rf9O8X1LZuteo-RM', 'tigrayinfo', 'width=400,height=400,right=0,top=500x')
-  
+  window.open('https://reverehealth.com/live-better/asthma-attacks-what-to-do-when-you-dont-have-your-inhaler/', 'inhaler', 'width=400,height=400,left=50,top=950x');
+  window.open('https://www.tiktok.com/@pappyorion/video/7365025092876717344?is_from_webapp=1&sender_device=pc&web_id=7119675791289599530', 'congott', 'width=400,height=400,left=950,top=50x');
+  window.open('https://media.licdn.com/dms/image/C4E22AQEJMfwDXRjRHw/feedshare-shrink_2048_1536/0/1652736379352?e=2147483647&v=beta&t=uZmDRzdGOma8F5aiCRdTGwg9Un3Rf9O8X1LZuteo-RM', 'tigrayinfo', 'width=400,height=400,right=0,top=500x');
+  window.open('https://p4hglobal.org/give', 'haitiorg', 'width=400,height=400,right=300,bottom=0x');
+
 }
