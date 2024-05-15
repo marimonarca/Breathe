@@ -46,7 +46,7 @@ window.addEventListener('scroll', function() {
   }
 });
 
-
+// figure out how to use <div id="hover-target">Breathe</div> //
 // hover and blackout effect//
 document.addEventListener('DOMContentLoaded', (event) => {
   const blackoutDiv = document.createElement('div');
