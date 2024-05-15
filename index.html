@@ -32,8 +32,8 @@
 .image {
   animation: imageAnimation 8s infinite;
   background-size:    contain;
-  background-repeat:  no-repeat;
-  background-position: top left;
+  background-repeat:  repeat;
+  background-position: center center;
 }
 
 @keyframes imageAnimation {
@@ -58,6 +58,22 @@
   height: var(--size);
   width: calc(var(--size) *  3);
 }
+
+.hoverTarget {
+  position: center right;
+}
+
+/*screen go black */
+  .blackout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: none;
+    z-index: 10; /* covers everything */
+  }
 
   </style>
  </head>
@@ -125,6 +141,8 @@
  <img src="google8.png" style="width:100%">
 </div>
 </div>
+
+<div id="hover-target">Breathe</div>
 
 <script src="main.js"></script>
 
