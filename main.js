@@ -46,7 +46,8 @@ window.addEventListener('scroll', function() {
   }
 });
 
-// figure out how to use <div id="hover-target">Breathe</div> //
+//could not figure out how to use <div id="hover-target">Breathe</div> //
+// everything below would not work :,( // 
 // hover and blackout effect//
 document.addEventListener('DOMContentLoaded', (event) => {
   const blackoutDiv = document.createElement('div');
@@ -87,7 +88,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     window.open('https://p4hglobal.org/give', 'haitiorg').close();
   }
 
-  // Function to turn off audio
+  // Function to turn off audio - worked but could not get screen blackout effect
   function turnOffAudio() {
     document.querySelectorAll('audio').forEach(audio => {
       audio.mute();
@@ -95,12 +96,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
   }
 
-  // Function to toggle blackout effect
+  // Function to toggle blackout effect, could not make it work
   function toggleBlackout(show) {
     blackoutDiv.style.display = show ? 'block' : 'none';
   }
 
-  // Detect hover over a specific position (e.g., an element with the ID 'hover-target')
+  // Detect hover over a specific position (e.g., an element with the ID 'hover-target')could not get it to work
   const hoverTarget = document.getElementById('hover-target');
   hoverTarget.addEventListener('mouseenter', () => {
     closePopups();
